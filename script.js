@@ -10,12 +10,14 @@ const btnEquals = document.querySelector('.btn-equals');
 const outputNumber = document.querySelector('.number');
 
 btnDigit.forEach((button => {
-    button.addEventListener('click', function(e) {
-        let valButton = this.value;
-        outputNumber.textContent = valButton;
-        return valButton;
-    });
+    button.addEventListener('click', displayDigits);
 }));
+
+function displayDigits(button) {
+    let valButton = this.value;
+    outputNumber.textContent = valButton;
+    return valButton;
+}
 
 btnOperator.forEach((button => {
     button.addEventListener('click', function(e) {
