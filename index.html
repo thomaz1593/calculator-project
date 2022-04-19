@@ -10,28 +10,29 @@
 <body>
     <div class="calculator">
         <div class="display">
-            <p class="number">22</p>
+            <p class="display-number">0</p>
         </div>
         <div class="digits">
-            <button class="btn-one btn-digit" value="1">1</button>
-            <button class="btn-two btn-digit" value="2">2</button>
-            <button class="btn-three btn-digit" value="3">3</button>
-            <button class="btn-four btn-digit" value="4">4</button>
-            <button class="btn-five btn-digit" value="5">5</button>
-            <button class="btn-six btn-digit" value="6">6</button>
-            <button class="btn-seven btn-digit" value="7">7</button>
-            <button class="btn-eight btn-digit" value="8">8</button>
-            <button class="btn-nine btn-digit" value="9">9</button>
+            <button class="btn-one btn-digit" value="1" data-type="number">1</button>
+            <button class="btn-two btn-digit" value="2" data-type="number">2</button>
+            <button class="btn-three btn-digit" value="3" data-type="number">3</button>
+            <button class="btn-four btn-digit" value="4" data-type="number">4</button>
+            <button class="btn-five btn-digit" value="5" data-type="number">5</button>
+            <button class="btn-six btn-digit" value="6" data-type="number">6</button>
+            <button class="btn-seven btn-digit" value="7" data-type="number">7</button>
+            <button class="btn-eight btn-digit" value="8" data-type="number">8</button>
+            <button class="btn-nine btn-digit" value="9" data-type="number">9</button>
+            <button class="btn-zero btn-digit" value="0" data-type="number">0</button>
         </div>
         <div class="operators">
-            <button class="btn-add btn-operator" value="+">+</button>
-            <button class="btn-sub btn-operator" value="-">-</button>
-            <button class="btn-mul btn-operator" value="*">*</button>
-            <button class="btn-div btn-operator" value="/">/</button>
+            <button class="btn-add btn-operator" value="plus" data-type="operator">+</button>
+            <button class="btn-sub btn-operator" value="minus" data-type="operator">-</button>
+            <button class="btn-mul btn-operator" value="times" data-type="operator">X</button>
+            <button class="btn-div btn-operator" value="divide" data-type="operator">/</button>
         </div>
         <div class="results">
             <button class="btn-clear">Clear</button>
-            <button class="btn-equals">=</button>
+            <button class="btn-equals" data-type="equals">=</button>
         </div>
     </div>
 
